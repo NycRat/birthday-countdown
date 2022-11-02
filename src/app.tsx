@@ -46,7 +46,13 @@ class App extends Component {
 
   getPage = () => {
     if (this.state.birthdays.length <= 1) {
-      return <h1>loading...</h1>;
+      return (
+        <h1
+          className="text-center"
+        >
+          Loading...
+        </h1>
+      );
     }
     return (
       <HashRouter>

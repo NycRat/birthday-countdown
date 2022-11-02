@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import { Badge, Container } from "react-bootstrap";
+import { Component, Fragment } from "react";
+import { Badge } from "react-bootstrap";
 import { Birthday } from "../app";
 import { getFormattedDate } from "../helperFunctions";
 import { timeBetween } from "../helperFunctions";
@@ -50,29 +50,39 @@ class CountdownDisplay extends Component<{ birthdays: Birthday[] }> {
     }
     return (
       <Fragment>
-        <Container>
+        <div
+          style={{
+            position: "absolute",
+            top: "40%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "90vw",
+          }}
+        >
           <h1
             style={{
               textAlign: "center",
             }}
           >
-            <Badge bg="primary" pill={true} className="m-2 text-wrap">
+            <Badge bg="secondary" pill={true} className="m-2 text-wrap">
               {names}
-              {" : " + this.state.formattedDate}
+            </Badge>
+            <br />
+            <Badge bg="primary" pill={true} className="text-wrap mb-3">
+              {this.state.formattedDate}
             </Badge>
             <br></br>
             <Badge
               bg="success"
-              pill={true}
-              className="m-2 text-wrap"
+              className="text-wrap"
               style={{
-                fontSize: "calc(20px + 2.5vw)",
+                fontSize: "calc(18px + 2.5vw)",
               }}
             >
               {this.state.formattedTime}
             </Badge>
           </h1>
-        </Container>
+        </div>
       </Fragment>
     );
   }
