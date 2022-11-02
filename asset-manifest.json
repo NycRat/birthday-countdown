@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/birthday-countdown/static/css/main.af5b8f10.css",
-    "main.js": "/birthday-countdown/static/js/main.3f66a0d5.js",
-    "static/js/787.2f9d82a1.chunk.js": "/birthday-countdown/static/js/787.2f9d82a1.chunk.js",
-    "index.html": "/birthday-countdown/index.html",
-    "main.af5b8f10.css.map": "/birthday-countdown/static/css/main.af5b8f10.css.map",
-    "main.3f66a0d5.js.map": "/birthday-countdown/static/js/main.3f66a0d5.js.map",
-    "787.2f9d82a1.chunk.js.map": "/birthday-countdown/static/js/787.2f9d82a1.chunk.js.map"
+    "main.css": "/nycrat.github.io/birthday-countdown/static/css/main.76031048.css",
+    "main.js": "/nycrat.github.io/birthday-countdown/static/js/main.9037b364.js",
+    "index.html": "/nycrat.github.io/birthday-countdown/index.html",
+    "main.76031048.css.map": "/nycrat.github.io/birthday-countdown/static/css/main.76031048.css.map",
+    "main.9037b364.js.map": "/nycrat.github.io/birthday-countdown/static/js/main.9037b364.js.map"
   },
   "entrypoints": [
-    "static/css/main.af5b8f10.css",
-    "static/js/main.3f66a0d5.js"
+    "static/css/main.76031048.css",
+    "static/js/main.9037b364.js"
   ]
 }
