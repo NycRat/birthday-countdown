@@ -74,6 +74,7 @@ class CountdownDisplay extends Component<{ birthdays: Birthday[] }> {
             <br></br>
             <Badge
               bg="success"
+              pill={true}
               className="text-wrap"
               style={{
                 fontSize: "calc(18px + 2.5vw)",
