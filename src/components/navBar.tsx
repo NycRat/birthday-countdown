@@ -34,13 +34,13 @@ class NavBar extends Component {
               <Nav.Link href="/birthday-countdown/#/countdown">
                 Countdown
               </Nav.Link>
-              <Nav.Link href="/birthday-countdown/#/list">
-                Birthdays List
-              </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="/birthday-countdown/#/birthday-submission">
-                Add your birthday
+              {/* <Nav.Link href="/birthday-countdown/#/birthday-submission"> */}
+              {/*   Add your birthday */}
+              {/* </Nav.Link> */}
+              <Nav.Link href="/birthday-countdown/#/list">
+                Birthdays List
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

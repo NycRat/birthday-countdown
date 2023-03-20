@@ -28,7 +28,10 @@ class BirthdayList extends Component<{
           sortDate={this.props.sortDate}
           reverseList={this.props.reverseList}
         />
-        <ListGroup as="ol" numbered>
+        <ListGroup as="ol" numbered style={{
+          maxHeight: "85vh",
+          overflow: "auto"
+        }}>
           {this.props.birthdays.map((birthday) => (
             <ListGroupItem as="li" variant="light" key={i++}>
               {birthday.firstName} {birthday.lastName}:{" "}

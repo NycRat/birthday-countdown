@@ -1,0 +1,226 @@
+[
+  {
+    "year": 1993,
+    "month": 1,
+    "day": 1,
+    "firstName": "Larry",
+    "lastName": "Nance Jr."
+  },
+  {
+    "year": 1998,
+    "month": 1,
+    "day":4,
+    "firstName": "Arnoldas",
+    "lastName": "Kulboka"
+  },
+  {
+    "year": 2000,
+    "month": 1,
+    "day": 20,
+    "firstName": "Tyler",
+    "lastName": "Herro"
+  },
+  {
+    "year": 1984,
+    "month": 1,
+    "day": 28,
+    "firstName": "Andre",
+    "lastName": "Iguodala"
+  },
+  {
+    "year": 1995,
+    "month": 2,
+    "day": 10,
+    "firstName": "Sterling",
+    "lastName": "Brown"
+  },
+  {
+    "year": 1995,
+    "month": 2,
+    "day": 23,
+    "firstName": "Andrew",
+    "lastName": "Wiggins"
+  },
+  {
+    "year": 1999,
+    "month": 2,
+    "day": 28,
+    "firstName": "Luka",
+    "lastName": "Doncic"
+  },
+  {
+    "year":1990 ,
+    "month": 3,
+    "day":4,
+    "firstName": "Draymond",
+    "lastName": "Green"
+  },
+  {
+    "year":1993 ,
+    "month": 3,
+    "day": 11,
+    "firstName": "Anthony",
+    "lastName": "Davis"
+  },
+  {
+    "year":1992 ,
+    "month": 3,
+    "day": 23,
+    "firstName": "Kyrie",
+    "lastName": "Irving"
+  },
+  {
+    "year":1994 ,
+    "month": 4,
+    "day":8,
+    "firstName": "Dario",
+    "lastName": "Saric"
+  },
+  {
+    "year":1994 ,
+    "month": 4,
+    "day": 10,
+    "firstName": "Nerlens",
+    "lastName": "Noel"
+  },
+  {
+    "year":1997 ,
+    "month": 4,
+    "day": 17,
+    "firstName": "Matt",
+    "lastName": "Ryan"
+  },
+  {
+    "year":1991 ,
+    "month": 4,
+    "day": 19,
+    "firstName": "Kelly",
+    "lastName": "Olynyk"
+  },
+  {
+    "year":1990 ,
+    "month": 5,
+    "day":2,
+    "firstName": "Paul",
+    "lastName": "George"
+  },
+  {
+    "year":1985 ,
+    "month": 5,
+    "day":6,
+    "firstName": "Chris",
+    "lastName": "Paul"
+  },
+  {
+    "year":1998 ,
+    "month": 5,
+    "day": 12,
+    "firstName": "Mo",
+    "lastName": "Bamba"
+  },
+  {
+    "year":1996 ,
+    "month": 5,
+    "day": 29,
+    "firstName": "Stanley",
+    "lastName": "Johnson"
+  },
+  {
+    "year":1989 ,
+    "month": 6,
+    "day":5,
+    "firstName": "Ed",
+    "lastName": "Davis"
+  },
+  {
+    "year":1991 ,
+    "month": 6,
+    "day": 29,
+    "firstName": "Kawhi",
+    "lastName": "Leonard"
+  },
+  {
+    "year":1999 ,
+    "month": 7,
+    "day":2,
+    "firstName": "Isaiah",
+    "lastName": "Joe"
+  },
+  {
+    "year":1997 ,
+    "month": 7,
+    "day": 31,
+    "firstName": "Thomas",
+    "lastName": "Bryant"
+  },
+  {
+    "year":1999 ,
+    "month": 8,
+    "day": 10,
+    "firstName": "Ja",
+    "lastName": "Morant"
+  },
+  {
+    "year":2001 ,
+    "month": 8,
+    "day": 22,
+    "firstName": "LaMelo",
+    "lastName": "Ball"
+  },
+  {
+    "year": 1991,
+    "month": 9,
+    "day": 6,
+    "firstName": "Joe",
+    "lastName": "Harris"
+  },
+  {
+    "year":1995 ,
+    "month": 9,
+    "day": 28,
+    "firstName": "Caleb",
+    "lastName": "Martin"
+  },
+  {
+    "year":1988 ,
+    "month": 10,
+    "day":4,
+    "firstName": "Derrick",
+    "lastName": "Rose"
+  },
+  {
+    "year":1996 ,
+    "month": 10,
+    "day": 24,
+    "firstName": "Jaylen",
+    "lastName": "Brown"
+  },
+  {
+    "year":1999 ,
+    "month": 11,
+    "day":7,
+    "firstName": "Dalano",
+    "lastName": "Banton"
+  },
+  {
+    "year":1995 ,
+    "month": 11,
+    "day": 21,
+    "firstName": "Chris",
+    "lastName": "Chiozza"
+  },
+  {
+    "year":1988 ,
+    "month": 12,
+    "day": 25,
+    "firstName": "Eric",
+    "lastName": "Gordon"
+  },
+  {
+    "year": 1984,
+    "month": 12,
+    "day": 30,
+    "firstName": "  ",
+    "lastName": "James"
+  }
+]

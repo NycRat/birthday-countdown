@@ -4,8 +4,9 @@ import CountdownDisplay from "./components/countdownDisplay";
 import BirthdayList from "./components/birthdayList";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { timeBetween } from "./helperFunctions";
-import BirthdaySubmission from "./components/birthdaySubmission";
+/* import BirthdaySubmission from "./components/birthdaySubmission"; */
 import CurrentBirthday from "./components/currentBirthday";
+import birthdaysList from "./something.json";
 
 export class Birthday extends Date {
   firstName: string;
@@ -23,7 +24,8 @@ export class Birthday extends Date {
   }
 }
 
-export const SERVER_HTTP = "https://birthday-db.herokuapp.com";
+// i am just not hosting this.
+/* export const SERVER_HTTP = "https://birthday-db.herokuapp.com"; */
 
 class App extends Component {
   state: { birthdays: Array<Birthday> } = {
@@ -46,13 +48,7 @@ class App extends Component {
 
   getPage = () => {
     if (this.state.birthdays.length <= 1) {
-      return (
-        <h1
-          className="text-center"
-        >
-          Loading...
-        </h1>
-      );
+      return <h1 className="text-center">Loading...</h1>;
     }
     return (
       <HashRouter>
@@ -73,15 +69,15 @@ class App extends Component {
               />
             }
           ></Route>
-          <Route
-            path="/birthday-submission"
-            element={
-              <BirthdaySubmission
-                birthdays={this.state.birthdays}
-                refreshList={this.updateBirthdays}
-              />
-            }
-          ></Route>
+          {/* <Route */}
+          {/*   path="/birthday-submission" */}
+          {/*   element={ */}
+          {/*     <BirthdaySubmission */}
+          {/*       birthdays={this.state.birthdays} */}
+          {/*       refreshList={this.updateBirthdays} */}
+          {/*     /> */}
+          {/*   } */}
+          {/* ></Route> */}
           <Route path="/" element={this.getMainPage()}></Route>
           <Route
             path="*"
@@ -115,27 +111,15 @@ class App extends Component {
     let birthdays: Array<Birthday> = [];
     this.setState({ birthdays });
 
-    fetch(SERVER_HTTP + "/get")
-      .then((response) => response.json())
-      .then((payload) => {
-        payload.forEach((val: any) => {
-          // figure this out
-          // birthdays.push(new Birthday(val.year + '/' + val.month + '/' + val.day, val.firstName, val.lastName))
-          birthdays.push(
-            new Birthday(
-              parseInt(val.year),
-              parseInt(val.month) - 1,
-              parseInt(val.day),
-              val.firstName,
-              val.lastName
-            )
-          );
-        });
+    for (let bd of birthdaysList) {
+      birthdays.push(
+        new Birthday(bd.year, bd.month - 1, bd.day, bd.firstName, bd.lastName)
+      );
+    }
 
-        this.setState({ birthdays });
+    console.log(birthdays);
 
-        this.sortUpcoming();
-      });
+    this.cn(birthdays);
   };
 
   sortAge = () => {
@@ -165,8 +149,7 @@ class App extends Component {
     this.setState({ birthdays });
   };
 
-  sortUpcoming = () => {
-    let birthdays = this.state.birthdays;
+  cn = (birthdays: Array<Birthday>) => {
     birthdays.sort((a, b) => {
       const now = new Date();
       let aYear = a.getFullYear();
@@ -188,6 +171,35 @@ class App extends Component {
       b.setFullYear(bYear);
       return aDis - bDis;
     });
+
+    this.setState({ birthdays });
+  }
+
+  sortUpcoming = () => {
+    let birthdays = this.state.birthdays;
+
+    birthdays.sort((a, b) => {
+      const now = new Date();
+      let aYear = a.getFullYear();
+      let bYear = b.getFullYear();
+
+      a.setFullYear(now.getFullYear());
+      b.setFullYear(now.getFullYear());
+      if (a.getTime() - now.getTime() < 0) {
+        a.setFullYear(a.getFullYear() + 1);
+      }
+      if (b.getTime() - now.getTime() < 0) {
+        b.setFullYear(b.getFullYear() + 1);
+      }
+
+      let aDis = Math.floor(timeBetween(a, now, 1000 * 60 * 60 * 24));
+      let bDis = Math.floor(timeBetween(b, now, 1000 * 60 * 60 * 24));
+
+      a.setFullYear(aYear);
+      b.setFullYear(bYear);
+      return aDis - bDis;
+    });
+
     this.setState({ birthdays });
   };
 
